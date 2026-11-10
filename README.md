@@ -21,25 +21,6 @@ AskFlow 是一个面向 RAG 演进的生产级 Java AI 应用平台，覆盖从�
 
 
 
-## 🧭 快速导航
-
-> 觉得不错？先点个 Star 收藏，所有链接都会在新标签页打开，不会离开本页 👇
-
-<p align="left">
-  <a href="https://github.com/nageoffer/ragent/stargazers">
-    <img src="assets/star-me.svg" alt="Star this repo" />
-  </a>
-</p>
-
-| &nbsp; | 链接 | 说明 |
-|:---:|:---|:---|
-| 📖 | <a href="https://nageoffer.com/ragent" target="_blank">官网文档</a> | Ragent AI 完整文档 |
-| 🚀 | <a href="https://nageoffer.com/ragent/demo/" target="_blank">在线体验</a> | 无需部署，直接体验 Ragent AI |
-| ⚡ | <a href="https://nageoffer.com/ragent/local-dev/" target="_blank">快速启动</a> | 本地搭建 Ragent AI 前后端项目 |
-| 📝 | <a href="https://nageoffer.com/ragent/interview/" target="_blank">简历怎么写</a> | 项目如何写到简历上 |
-| 💡 | <a href="https://nageoffer.com/ragent/why-springai-langchain4j/" target="_blank">为什么不用 Spring AI / LangChain4j</a> | 技术选型的思考 |
-
-
 
 ## 🏗️ AskFlow 核心设计
 
@@ -214,52 +195,6 @@ v1 管理后台侧重 RAG 配置和运行管理，覆盖模型、知识库、数
 
 ![](assets/admin-theme.png)
 
-### 7. 和市面上项目的区别
-
-Ragent 定位于 **Java AI 应用的源码级工程参考**，重点是完整链路、生产保障和二次开发能力。
-
-| 对比维度 | 常见 RAG 教程 / Demo | Ragent                                                 |
-|:---|:-----------------|:-------------------------------------------------------|
-| 项目定位 | 跑通检索与生成          | 完整 Java Agentic RAG 应用                             |
-| 检索 | 单路向量 TopK        | 向量 / 关键词 / 图谱 / 联网召回，RRF 融合与 Rerank     |
-| 问题理解 | 原问题直接检索          | 查询词映射、问题重写与拆分、树形意图和多知识库路由     |
-| 模型调用 | 单模型直连            | 模型档位、首包探测与熔断降级                           |
-| 工具接入 | 以应用内函数调用为主 | MCP 协议、远程工具发现、Schema 校验与写操作人工确认    |
-| 智能体 | 无或单轮函数调用 | ReAct 多轮推理、技能体系、执行中断与恢复               |
-| 知识入库 | 一次性脚本            | 可编排 Pipeline、节点日志、远程文档定时刷新            |
-| 会话记忆 | 以近期消息拼接为主 | 最近 N 轮消息 + 持久化摘要；Agent 侧三层上下文管理     |
-| 回答可信度 | 只展示答案            | 来源引用、原文预览与用户反馈                           |
-| 运行保障 | 基础日志             | 分布式限流、幂等、事务消息、Trace 与审计               |
-| 监控指标 | 通用调用量与耗时 | 基于 LangFuse 提供个性化指标，覆盖链路质量、工具调用等 |
-| 二次开发 | 流程写死             | 模型、存储、检索、入库和 MCP 均提供扩展接口            |
-| 管理能力 | 无或简单页面           | 完整用户端与管理后台                                   |
-
-## ❓ 常见问题答疑
-
-一句话：学完 Ragent，你既能跟面试官聊 RAG/Agent 的技术深度，也能证明自己的 Java 工程化水平。
-
-<details>
-<summary><b>能学到什么 / 适合谁？</b>（点击展开）</summary>
-
-### 1. 能够学到什么？
-
-Ragent 不只是教你调 API，而是让你理解一个 Agentic RAG 系统从 0 到 1 落地的全过程。粗略来说，你能收获这些：
-
-- **RAG 全链路工程能力**：文档解析、分块策略、Embedding 向量化、意图识别、问题重写与拆分、多路检索、重排序、Prompt 组装、流式生成，每个环节怎么做、为什么这么做。
-- **Agent 智能体实战**：ReAct 执行引擎、MCP 工具调用、技能体系、三层上下文记忆、人工确认，这些是 AI 应用区别于传统 CRUD 系统的核心能力。
-- **模型工程化实践**：模型档位、多候选路由、首包探测、熔断降级，解决模型不稳定时如何保障服务可用性。
-- **高质量 Java 工程能力**：分层架构、设计模式实战、分布式并发限流、多线程池管理与上下文透传、全链路追踪，这些能力不局限于 AI 项目，放到任何 Java 后端岗位都是加分项。
-- **前后端完整项目经验**：后端 Spring Boot 4 + 前端 React 18，从 API 设计到页面交互，完整的全栈项目经历。
 
 
-<p align="center">
-  <a href="https://www.star-history.com/?repos=nageoffer%2Fragent&type=date&legend=top-left">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/image?repos=nageoffer/ragent&type=date&theme=dark&legend=top-left" />
-      <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/image?repos=nageoffer/ragent&type=date&legend=top-left" />
-      <img alt="Star History Chart" src="https://api.star-history.com/image?repos=nageoffer/ragent&type=date&legend=top-left" />
-    </picture>
-  </a>
-</p>
 
-如果屏幕前的亦菲/彦祖觉得项目还不错，点个 Star 支持一下，这是对开源作者最好的认可！
