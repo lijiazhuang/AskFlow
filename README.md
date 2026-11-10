@@ -7,9 +7,6 @@
   </a>
 </p>
 
-<p align="center">
-  <strong>后端程序员转型 AI 工程师的第一站</strong><br/>
-</p>
 
 <p align="center">
   <a href="https://github.com/nageoffer/ragent/stargazers"><img alt="GitHub stars" src="https://img.shields.io/github/stars/nageoffer/ragent?style=flat-square&logo=github&color=e8b227" /></a>&nbsp;
